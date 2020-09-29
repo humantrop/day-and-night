@@ -2,11 +2,26 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s ease;
+  background: linear-gradient(90deg, e2e2e2, yellow);
+  transition: all 1s ease;
+  cursor: none;
 }
 /* Body toggle */
 .body-dark {
   background: black;
+}
+
+#cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  transition: 0.1s all;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99;
 }
 
 .hero {
@@ -44,10 +59,12 @@ h1.heading {
   transform: translateX(150px);
   transform: translateY(50px);
   transition: all 0.5s ease;
+  opacity: 0;
 }
 
 .moon-dark {
   transform: translateX(0px);
+  opacity: 1;
 }
 
 .heading-dark {
@@ -61,7 +78,7 @@ h1.heading {
   border: none;
   border-radius: 25px;
   padding: 10px 15px;
-  cursor: pointer;
+  cursor: none;
   transition: 0.5s;
 }
 
@@ -69,7 +86,7 @@ h1.heading {
   outline: none;
 }
 
-/* Swithc border toggle */
+/* Switch border toggle */
 
 .light {
   color: orange;

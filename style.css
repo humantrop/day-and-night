@@ -15,13 +15,19 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 2px solid #000;
+  border: 2px double #000;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
   transition: 0.1s all;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99;
+}
+
+.cursor-dark {
+  border: 2px double white;
+  background: white;
+  filter: drop-shadow(1px 1px 5px white);
 }
 
 .hero {
